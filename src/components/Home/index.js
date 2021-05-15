@@ -17,7 +17,7 @@ const Home = () => {
 
 
             <section>
-                <a href="#" class="image featured"><img src={homeIcon} alt="" /></a>
+                <a href="#" className="image featured"><img src={homeIcon} alt="" /></a>
             </section>
         </div>
     )

@@ -2538,6 +2538,10 @@ input, select, textarea {
 		background: #fff;
 	}
 
+    .our-team-header{
+        text-align: center;
+    }
+
     
 
 /* Sidebar + Content */
