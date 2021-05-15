@@ -4,15 +4,17 @@ import PhilosophyIMG from '../../assets/Philosophy.png';
 import { StyledAbout,  StyledAboutImgSection , StyledAboutTextSection , StyledAboutText ,
     SyledPhilosophyContainer ,  SyledPhilosophyDiv } from './StyledAbout';
 import  useResize  from '../../customHooks/UseResize';
+import useMedia from '../../customHooks/UseMedia';
 
 const About = () => {
     const imageRef = useRef(null);
     const [height,setHight] = useState(0);
+    const {isMobile , isDevice} = useMedia();
 
     return (
         <div>
             <section>
-                <StyledAbout className="row">
+                <StyledAbout isDevice={isDevice} className="row">
                     <StyledAboutImgSection className="col-6 col-12-medium">
                         <img className="image featured" src={AboutIcon}></img>
                     </StyledAboutImgSection>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.div`
-    /* height: 740px; */
+    height: ${(props)=> props.isDevice ? 'auto' : '740px'};
 `
 
 
