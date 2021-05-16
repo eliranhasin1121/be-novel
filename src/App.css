@@ -1,6 +1,6 @@
 @import '~antd/dist/antd.css';
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic|Open+Sans+Condensed:700");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -29,6 +29,10 @@ body {
 
 ol, ul {
 	list-style: none;
+}
+
+section{
+	background-color: #ffF;
 }
 
 blockquote, q {
@@ -2112,7 +2116,11 @@ input, select, textarea {
 	form input[type="password"],
 	form select {
 		line-height: 3em;
-		padding: 0 1em;
+		border: none;
+		border-bottom: 1px solid;
+		color: black;
+		border-radius: 0px;
+		margin-bottom: 20px;
 	}
 
 	form textarea {
@@ -2336,7 +2344,7 @@ input, select, textarea {
 		text-align: center;
 		text-transform: uppercase;
 		cursor: default;
-        font-family: Helvetica;
+		font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         color: #A2A7B6;
         letter-spacing: -0.84px;
@@ -2462,18 +2470,17 @@ input, select, textarea {
 
 	#banner {
 		position: relative;
-		/* background-image: url("./images/overlay.png"), url("./images/overlay.png"), url("./images/banner.jpg"); */
 		background-position: top left, top left, center center;
 		background-repeat: repeat, repeat, no-repeat;
 		background-size: auto, auto, cover;
 		z-index: 1;
-		padding: 11em 0;
+		max-height: 250px;
+		padding-top: 0px !important;
 	}
 
 		#banner .content {
 			position: relative;
-			background-color: rgba(21, 28, 23, 0.85);
-			background-image: url("./images/overlay.png"), url("images/highlight.png");
+			background-color: #000000;
 			background-position: top left, center center;
 			background-size: auto, 100% 250%;
 			background-repeat: repeat, no-repeat;
@@ -2483,14 +2490,15 @@ input, select, textarea {
 		}
 
 			#banner .content h2 {
-				color: #fff;
+				color: #0352ff;
 				font-size: 2.75em;
 				margin: 0 0 0.5em 0;
+				padding: 10px;
 			}
 
 			#banner .content p {
 				display: block;
-				font-family: 'Open Sans Condensed', sans-serif;
+				font-family: 'Montserrat', sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
 				color: #575d59;
@@ -2505,9 +2513,11 @@ input, select, textarea {
 				transition: border-color .2s ease-in-out, color .2s ease-in-out;
 				color: #b4b7b5;
 				background: transparent !important;
-				border: solid 4px #575d59;
-				border-color: rgba(87, 93, 89, 0.35);
 				font-size: 1.5em;
+				border: 2px solid #979DAC;
+				border-radius: 8px;
+				background-image: linear-gradient(180deg, #5C677D 0%, #7D8597 48%, #979DAC 100%);
+
 			}
 
 				#banner .content .button:hover {

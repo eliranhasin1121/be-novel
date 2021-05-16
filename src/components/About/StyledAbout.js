@@ -17,7 +17,7 @@ export const StyledAboutTextSection = styled.div`
 
 
 export const StyledAboutText = styled.p`
-    font-family: Helvetica;
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     color: #000000;
     line-height: 1;
