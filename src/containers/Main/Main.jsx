@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useEffect} from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeLanguage, getActiveLanguage } from '../../config/translations/utils';
@@ -7,6 +7,9 @@ import Home from '../../components/Home';
 import About from '../../components/About';
 import Team from '../../components/Team';
 import Contact from '../../components/Contact';
+import BurgerMenu from '../../components/BurgerMenu';
+import useMedia from '../../customHooks/UseMedia'
+
 
 export default () => {
   const dispatch = useDispatch();
@@ -27,18 +30,22 @@ export default () => {
     }
   }
 
+  const {isDevice} = useMedia();
+
+
   return (
       <div id="page-wrapper">
+       {isDevice && <BurgerMenu/> }
 				<section>
 					<Home/>
 				</section>
         
 				<section id="main">
-					<div class="row gtr-200">
-						<div class="col-12">
+					<div className="row gtr-200">
+						<div className="col-12">
               <About/>
 						</div>
-						<div class="col-12">
+						<div className="col-12">
 							<h2 className="our-team-header">OUR TEAM</h2>
 								<Team/>
 							</div>
@@ -46,13 +53,12 @@ export default () => {
 				</section>
 
         <section id="Contact">
-					<div class="row gtr-200">
-						<div class="col-12">
+					<div className="row gtr-200">
+						<div className="col-12">
               <Contact/>
 						</div>
           </div>
 				</section>
-
 
 		</div>
 

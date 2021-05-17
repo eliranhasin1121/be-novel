@@ -6,8 +6,6 @@ import { StyledOutTeamText , StyledOutTeamImage , StyledTeamMemberContainer , St
 import useMedia from '../../customHooks/UseMedia';
 const Team = () =>{
     const {isMobile , isDevice} = useMedia();
-
-    console.log('isTablet' , isDevice)
     return (
         <div>
             <section>

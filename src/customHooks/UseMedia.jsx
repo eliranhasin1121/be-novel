@@ -14,6 +14,15 @@ export default () => {
   // const miniMiddleScreen = useMediaQuery({ minWidth: 767 });
   const bigScreen = useMediaQuery({ minWidth: 1800 });
 
+  const replaceToBurderMenu = ()=>{
+    // var burgerMenu = document.createElement('div');
+    // burgerMenu.id = 'titleBar'
+    // burgerMenu.innerHTML = "<a href='#navPanel' class='toggle'></a> <span class='title'>' + $('#logo').html() + '</span>"
+    
+		// const body = document.body.appendChild(burgerMenu);
+  }
+
+
   useEffect(() => {
     setIsMobile(newIsMobile);
 
