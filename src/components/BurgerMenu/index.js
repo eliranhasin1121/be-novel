@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { StyledBurderMenuContianer , StyledBurderMenu , StyledMenuText , StyledMenuIcon , InsideBurgerIcon } from './StyledBurgerMenu'
 import homeIcon from '../../assets/logoBurderNav.png'
 import useMedia from '../../customHooks/UseMedia'
@@ -6,12 +6,14 @@ import useMedia from '../../customHooks/UseMedia'
 
 const BurgerMenu = ()=>{
     const {isMobile} = useMedia();
+    const [isOpen,setIsOpen] = useState(false);
 
     return (
         <StyledBurderMenuContianer>
-            <StyledBurderMenu role="navigation">
+            <StyledBurderMenu role="navigation" isOpen={isOpen}>
                 <div id="menuToggle">
-                    <input type="checkbox" />
+                <div className='circle'></div>
+                    <input type="checkbox" onClick={()=>setIsOpen(!isOpen)}/>
                         <span></span>
                         <span></span>
                         <span></span>

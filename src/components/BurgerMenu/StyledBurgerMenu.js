@@ -104,8 +104,8 @@ body
 #menuToggle span
 {
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   margin-bottom: 5px;
   position: relative;
   
@@ -135,6 +135,30 @@ body
  * Transform all the slices of hamburger
  * into a crossmark.
  */
+
+.circle {
+    display: ${(props)=> !props.isOpen ? 'none' : ''};
+    position: absolute;
+    bottom: -5px;
+    left: -8px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border: 2px solid #fff;
+    color: #666;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+    z-index: 1;
+    animation: showBlock 0s 0.2s forwards;
+    visibility: hidden;
+
+}
+ 
+@keyframes showBlock {
+    to { visibility: visible; }
+}
+
 #menuToggle input:checked ~ span
 {
   opacity: 1;

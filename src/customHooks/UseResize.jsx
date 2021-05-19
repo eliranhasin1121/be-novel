@@ -8,10 +8,10 @@ export default function useResize(myRef){
     const handleResize = () => {
     setWidth(myRef.current.offsetWidth);
     setHight(myRef.current.offsetHight);
+    }
     window.addEventListener('resize',handleResize);
-
+    handleResize();
     return () => window.removeEventListener('resize',handleResize);
-}
     },[myRef])
 
 
