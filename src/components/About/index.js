@@ -1,9 +1,9 @@
-import React, { useState , useRef , useEffect } from 'react';
+import React, { useState , useRef } from 'react';
 import AboutIcon from '../../assets/About.png'
+import scrollDownButton from '../../assets/scrollDownButton.png';
 import PhilosophyIMG from '../../assets/Philosophy.png';
-import { StyledAbout,  StyledAboutImgSection , StyledAboutTextSection , StyledAboutText ,
-    SyledPhilosophyContainer ,  SyledPhilosophyDiv } from './StyledAbout';
-import  useResize  from '../../customHooks/UseResize';
+import { StyledSection , StyledAbout,  StyledAboutImgSection , StyledAboutTextSection , StyledAboutText ,
+    SyledPhilosophyContainer ,  SyledPhilosophyDiv , StyledScrolArrowContiner ,StyledScrolArrow } from './StyledAbout';
 import useMedia from '../../customHooks/UseMedia';
 
 const About = () => {
@@ -26,8 +26,11 @@ const About = () => {
                     </StyledAboutTextSection>
                 </StyledAbout>
             </section>
-
-            <section>
+            <StyledScrolArrowContiner>
+                <span>contact us</span>
+                <StyledScrolArrow className="image featured" src={scrollDownButton}/>
+            </StyledScrolArrowContiner>
+            <StyledSection>
                 <SyledPhilosophyContainer className="row">
                 <SyledPhilosophyDiv imageHeight={height}>
                     <img ref={imageRef} className="image featured" src={PhilosophyIMG}></img>
@@ -40,7 +43,7 @@ const About = () => {
                     </div> */}
                 </SyledPhilosophyDiv>
                 </SyledPhilosophyContainer>
-            </section>
+            </StyledSection>
         </div>
     )
 }

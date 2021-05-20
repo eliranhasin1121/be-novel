@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+
+export const StyledSection = styled.section`
+    margin-bottom: 0px;
+`
+
 export const StyledAbout = styled.div`
     height: ${(props)=> props.isDevice ? 'auto' : '740px'};
 `
@@ -24,15 +29,29 @@ export const StyledAboutText = styled.p`
     text-align: center;
 `
 
+
+export const StyledScrolArrowContiner = styled.div`
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+`
+
+export const StyledScrolArrow = styled.img`
+    height: 60px;
+    width: 60px !important;
+    z-index: 1;
+`
+
 export const SyledPhilosophyContainer = styled.div`
     text-align: center;
-    /* height: 740px; */
 `
 
 export const SyledPhilosophyDiv = styled.div`
     position: relative;
     display: inline-block;
-
+    padding-top: 0px;
     .caption {
     width: 40%;
     position: absolute;

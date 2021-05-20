@@ -2,6 +2,7 @@ import React from 'react';
 import homeIcon from '../../assets/Home.png'
 import PiNovelLOGO from '../../assets/PI-NOVEL-LOGO.png'
 import { StyledPiNovelIcon } from './StyledHome';
+import { Link } from 'react-scroll'
 
 const Home = () => {
     return (
@@ -9,9 +10,9 @@ const Home = () => {
 				<nav className="web-nav-bar" id="nav">
                     <StyledPiNovelIcon src={PiNovelLOGO}></StyledPiNovelIcon>
 					<ul>
-						<li><a href="left-sidebar.html">ABOUT</a></li>
-						<li><a href="right-sidebar.html">TEAM</a></li>
-						<li><a href="no-sidebar.html">CONTACT</a></li>
+                        <li><Link to="about" spy={true} smooth={true}>ABOUT</Link></li>
+                        <li><Link to="team" spy={true} smooth={true}>TEAM</Link></li>
+                        <li><Link to="contact" spy={true} smooth={true}>CONTACT</Link></li>
 					</ul>
 				</nav>
 

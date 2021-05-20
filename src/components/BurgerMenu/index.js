@@ -2,7 +2,7 @@ import React , {useState} from 'react';
 import { StyledBurderMenuContianer , StyledBurderMenu , StyledMenuText , StyledMenuIcon , InsideBurgerIcon } from './StyledBurgerMenu'
 import homeIcon from '../../assets/logoBurderNav.png'
 import useMedia from '../../customHooks/UseMedia'
-
+import { Link } from 'react-scroll'
 
 const BurgerMenu = ()=>{
     const {isMobile} = useMedia();
@@ -19,9 +19,10 @@ const BurgerMenu = ()=>{
                         <span></span>
 
                     <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a href="/"><li>Home</li></a>
+                    <a href="team"><li>About</li></a>
+                    <li><Link to="about" spy={true} smooth={true}>About</Link></li>
+                    <a href="contact"><li>Contact</li></a>
                     <InsideBurgerIcon isMobile={isMobile} className="image featured burger-icon" src={homeIcon} alt="" />
                     </ul>
                     
