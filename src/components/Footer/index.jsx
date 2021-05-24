@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components'
 import footerLogo from '../../assets/footer-logo.png';
 import useMedia from '../../customHooks/UseMedia';
+import { Link } from 'react-scroll'
 
 export default function Footer(){
 
     const {isMobile} = useMedia();
-
 
     return(
         <FooterContainer>
@@ -21,17 +21,14 @@ export default function Footer(){
 		    <Text as={'span'}>©PI FUNDS | POWERED BY NERAFOX</Text>
 		  </LinkItemWrapper>
 		   <LinkItemWrapper className="col-1">
-		  <Text>HOME</Text>
+		  <Text><Link to="home" spy={true} smooth={true}>HOME</Link></Text>
 		 </LinkItemWrapper>
 		 <LinkItemWrapper className="col-1">
-		 <Text>ABOUT</Text>
+		 <Text><Link to="about" spy={true} smooth={true}>ABOUT</Link></Text>
 		</LinkItemWrapper>
 		<LinkItemWrapper className="col-1">
-		<Text>TEAM</Text>
+		<Text><Link to="team" spy={true} smooth={true}>TEAM</Link></Text>
 	   </LinkItemWrapper>
-	   <LinkItemWrapper className="col-1">
-	   <Text >PRODUCTS</Text>
-	  </LinkItemWrapper>
 	  <LinkItemWrapper className="col-3">
 	    <Text as={'span'} >TERMS OF USE | ACCESSIBILITY | A   A   A</Text> 
 	  </LinkItemWrapper>
@@ -57,23 +54,30 @@ export default function Footer(){
 const FooterContentContainer = styled.div`
 background-color:#000000;
 padding:20px;
+justify-content: space-between;
+height: 180px;
 `
 
 const LinkItemWrapper = styled.div`
 display:flex;
 align-items:center;
 justify-content:center;
-padding:15px 0 0 25px;
+padding:40px 0 0 25px;
 `
 
-const Text = styled.a`
+const Text = styled.span`
 font-size:12px;
-color:#ffffff;
+
+a{
+	color:#ffffff;
+	text-decoration: none;
+}
 `
 
 const Logo = styled.img`
 width:42px;
 height:67px;
+margin-bottom: 0px !important
 `
 
 

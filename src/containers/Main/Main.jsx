@@ -36,7 +36,7 @@ export default () => {
   return (
       <div id="page-wrapper">
        {isDevice && <BurgerMenu/> }
-				<section>
+				<section id='home'>
 					<Home/>
 				</section>
         

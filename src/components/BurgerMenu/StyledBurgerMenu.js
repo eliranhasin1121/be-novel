@@ -10,7 +10,6 @@ export const StyledBurderMenuContianer = Styled.div`
 export const StyledMenuText = Styled.label`
     position: relative;
     left: 72px;
-    bottom: 2px;
     color: white;
 `
 

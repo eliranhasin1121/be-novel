@@ -5,6 +5,7 @@ import PhilosophyIMG from '../../assets/Philosophy.png';
 import { StyledSection , StyledAbout,  StyledAboutImgSection , StyledAboutTextSection , StyledAboutText ,
     SyledPhilosophyContainer ,  SyledPhilosophyDiv , StyledScrolArrowContiner ,StyledScrolArrow } from './StyledAbout';
 import useMedia from '../../customHooks/UseMedia';
+import { Link } from 'react-scroll'
 
 const About = () => {
     const imageRef = useRef(null);
@@ -26,10 +27,12 @@ const About = () => {
                     </StyledAboutTextSection>
                 </StyledAbout>
             </section>
-            <StyledScrolArrowContiner>
-                <span>contact us</span>
-                <StyledScrolArrow className="image featured" src={scrollDownButton}/>
-            </StyledScrolArrowContiner>
+            <Link to="contact" spy={true} smooth={true}>
+                <StyledScrolArrowContiner>
+                    <span>contact us</span>
+                    <StyledScrolArrow className="image featured" src={scrollDownButton}/>
+                </StyledScrolArrowContiner>
+            </Link>
             <StyledSection>
                 <SyledPhilosophyContainer className="row">
                 <SyledPhilosophyDiv imageHeight={height}>
