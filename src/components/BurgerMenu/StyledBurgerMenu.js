@@ -4,6 +4,9 @@ import Styled from 'styled-components';
 export const StyledBurderMenuContianer = Styled.div`
     background-color: #031233;
     height: 80px;
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
 
 `
 
@@ -41,6 +44,15 @@ export const InsideBurgerIcon = Styled.img`
 
 
 export const StyledBurderMenu = Styled.nav`
+
+a{
+  color: white !important;
+}
+
+a:hover
+{
+  font-weight: bold;
+}
 
 body
 {

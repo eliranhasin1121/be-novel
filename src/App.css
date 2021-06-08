@@ -990,7 +990,7 @@ input, select, textarea {
 						margin-top: -80px;
 					}
 
-						.row.gtr-200.gtr-uniform > * {
+					.row.gtr-200.gtr-uniform > * {
 							padding-top: 80px;
 						}
 
@@ -2394,8 +2394,7 @@ input, select, textarea {
 			}
 
 			#nav li:hover a, #nav li:hover span {
-				background: #C1CAC5;
-				color: #fff;
+			    font-weight: 800;
 			}
 
 			#nav li.active a, #nav li.active span {
@@ -2695,10 +2694,6 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		/* Basic */
-
-			html, body {
-				overflow-x: hidden;
-			}
 
 		/* Box */
 
@@ -3057,11 +3052,6 @@ input, select, textarea {
 						font-size: 1.25em;
 					}
 
-		/* Main */
-
-			#main {
-				padding: 3em 0;
-			}
 
 		/* Sidebar */
 

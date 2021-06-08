@@ -3,12 +3,6 @@ import { StyledBurderMenuContianer , StyledBurderMenu , StyledMenuText , StyledM
 import homeIcon from '../../assets/logoBurderNav.png'
 import useMedia from '../../customHooks/UseMedia'
 import { Link } from 'react-scroll'
-import * as Scroll from 'react-scroll';
-
-const scrollTo = (num) => {
-    const scroll = Scroll.animateScroll;
-    scroll.scrollTo(num);
-  }
 
 const BurgerMenu = ()=>{
     const {isMobile} = useMedia();
@@ -25,10 +19,9 @@ const BurgerMenu = ()=>{
                         <span></span>
 
                     <ul id="menu">
-                    <a href="/"><li>Home</li></a>
-                    {/* <a ><li>About</li></a> */}
-                    <a><li><Link to="about" spy={true} smooth={true}>About</Link></li></a>
-                    <a ><li onClick={()=>scrollTo(100)}>Contact</li></a>
+                    <li><Link to="home" spy={true} smooth={true}>HOME</Link></li>
+                    <li><Link to="team" spy={true} smooth={true}>TEAM</Link></li>
+                    <li><Link to="contact" spy={true} smooth={true}>CONTACT</Link></li>
                     <InsideBurgerIcon isMobile={isMobile} className="image featured burger-icon" src={homeIcon} alt="" />
                     </ul>
                     

@@ -46,7 +46,7 @@ export default () => {
               <About/>
 						</div>
 						<div id="team" className="col-12">
-							<h2 className="our-team-header">OUR TEAM</h2>
+							<h2  tabIndex="0" className="our-team-header">OUR TEAM</h2>
 								<Team/>
 							</div>
 						</div>

@@ -8,14 +8,13 @@ const Home = () => {
     return (
         <div>
 				<nav className="web-nav-bar" id="nav">
-                    <StyledPiNovelIcon src={PiNovelLOGO}></StyledPiNovelIcon>
+                    <StyledPiNovelIcon tabIndex="0" aria-label='Be Novel' src={PiNovelLOGO}></StyledPiNovelIcon>
 					<ul>
-                        <li><Link to="about" spy={true} smooth={true}>ABOUT</Link></li>
-                        <li><Link to="team" spy={true} smooth={true}>TEAM</Link></li>
-                        <li><Link to="contact" spy={true} smooth={true}>CONTACT</Link></li>
+                        <li aria-label='About Section' tabIndex="0"><Link to="about" spy={true} smooth={true}>ABOUT</Link></li>
+                        <li aria-label='Team Section' tabIndex="0"><Link to="team" spy={true} smooth={true}>TEAM</Link></li>
+                        <li aria-label='Contact Section' tabIndex="0"><Link to="contact" spy={true} smooth={true}>CONTACT</Link></li>
 					</ul>
 				</nav>
-
 
             <section>
                 <a href="#" className="image featured"><img src={homeIcon} alt="" /></a>
