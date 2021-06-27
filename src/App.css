@@ -96,7 +96,7 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'Montserrat',sans-serif;
 		font-weight: 400;
 		color: #6b7770;
 		font-size: 13pt;
@@ -104,7 +104,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat',sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #6b7770;
@@ -204,7 +204,7 @@ input, select, textarea {
 
 	header > p {
 		display: block;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat',sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #c1cac5;
@@ -1778,7 +1778,7 @@ input, select, textarea {
 	.button {
 		-webkit-appearance: none;
 		display: inline-block;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat',sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
@@ -2085,7 +2085,7 @@ input, select, textarea {
 	form label {
 		display: block;
 		margin: 0 0 1em 0;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat',sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: #6b7770;
@@ -2174,7 +2174,7 @@ input, select, textarea {
 				text-align: left;
 				padding: 0.5em 1em 0.5em 1em;
 				margin: 0 0 1em 0;
-				font-family: 'Open Sans Condensed', sans-serif;
+				font-family: 'Montserrat',sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
 				color: #6b7770;
@@ -2299,7 +2299,7 @@ input, select, textarea {
 	#header {
 		text-align: center;
 		font-size: 2em;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat',sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		padding: 2em 0;
@@ -2414,7 +2414,7 @@ input, select, textarea {
 		border-radius: 6px;
 		line-height: 2.75em;
 		text-align: center;
-		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Montserrat',sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
 		padding: 1em 0;
@@ -2777,7 +2777,7 @@ input, select, textarea {
 				#titleBar .title {
 					display: block;
 					position: relative;
-					font-family: 'Open Sans Condensed', sans-serif;
+					font-family: 'Montserrat',sans-serif;
 					font-weight: 700;
 					text-transform: uppercase;
 					font-size: 1.25em;
@@ -2806,7 +2806,7 @@ input, select, textarea {
 						text-rendering: auto;
 						line-height: 1;
 						text-transform: none !important;
-						font-family: 'Font Awesome 5 Free';
+						font-family: 'Montserrat',sans-serif;
 						font-weight: 900;
 					}
 
@@ -2854,7 +2854,7 @@ input, select, textarea {
 
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% 100%;
-				font-family: 'Open Sans Condensed', sans-serif;
+				font-family: 'Montserrat',sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
 				font-size: 1.25em;
