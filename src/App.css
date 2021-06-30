@@ -1754,6 +1754,26 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
+		.image.featured.mid {
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+			width: 65%;
+		}
+
+
+		.teamImageContiner{
+			justify-content: center;
+		}
+
+		.grayBackground{
+			background-color: rgb(216,216,216);
+		}
+
+		.mid{
+			width: 65%;
+		}
+
 		.image.left {
 			float: left;
 			margin: 0 2em 2em 0;

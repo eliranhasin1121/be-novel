@@ -32,7 +32,7 @@ const About = () => {
             </Link>
             
             <section>
-                <div className="row">
+                <div className="row grayBackground">
                     <StyledAboutImgSection className="col-6 col-12-medium">
                         <img className="image featured" src={PhilosophyIMG}></img>
                     </StyledAboutImgSection>

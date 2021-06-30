@@ -2,19 +2,19 @@ import React from 'react';
 import BenLogo from '../../assets/Ben.png'
 import NickiLogo from '../../assets/Nicki.png'
 import TalieLogo from '../../assets/Talie.png'
-import { StyledOutTeamText , StyledOutTeamImage , StyledTeamMemberContainer , StyledTextContainer} from './StyledTeam';
+import { StyledOutTeamText , StyledOutTeamImage , StyledTeamMemberContainer , StyledTextContainer , StyledTeamName} from './StyledTeam';
 import useMedia from '../../customHooks/UseMedia';
 const Team = () =>{
     const {isMobile , isDevice} = useMedia();
     return (
         <div>
             <section>
-                <div className="row">
-                    <StyledTeamMemberContainer className="col-6 col-6-medium">
-                    <StyledOutTeamImage isMobile={isMobile} className="image featured" src={NickiLogo}></StyledOutTeamImage>
+                <div className="row teamImageContiner">
+                    <StyledTeamMemberContainer className="col-6 col-6-medium teamImageContiner">
+                    <StyledOutTeamImage isMobile={isMobile} className="image featured mid" src={NickiLogo}></StyledOutTeamImage>
                     {isDevice &&  
                         <StyledOutTeamText isDevice={isDevice}>
-                            <span tabIndex="0">NICKI NIKITENKO</span>
+                            <StyledTeamName tabIndex="0">NICKI NIKITENKO</StyledTeamName>
                             <span tabIndex="0">HEAD OF TRADING</span>   
                         </StyledOutTeamText>                    
                     }
@@ -23,7 +23,7 @@ const Team = () =>{
                         <StyledOutTeamText isDevice={isDevice}>
                         {!isDevice && 
                             <React.Fragment>
-                                <span tabIndex="0">NICKI NIKITENKO</span>
+                                <StyledTeamName tabIndex="0">NICKI NIKITENKO</StyledTeamName>
                                 <span tabIndex="0">HEAD OF TRADING</span>
                             </React.Fragment>
                         }
@@ -34,23 +34,23 @@ const Team = () =>{
             </section>
 
             <section>
-                <div className="row">
+                <div className="row teamImageContiner">
                         {!isDevice && 
                         <StyledTextContainer className="col-6 col-12-medium">
                             <StyledOutTeamText isDevice={isDevice}>
                                 <React.Fragment>
-                                    <span tabIndex="0">BEN MOSCONA</span>
+                                    <StyledTeamName tabIndex="0">BEN MOSCONA</StyledTeamName>
                                     <span tabIndex="0">HEAD OF RESEARCH</span>
                                 </React.Fragment>
                                 <span tabIndex="0">Dolev started his career in 2013 as an Equity derivatives analyst at Brevan Howard, he then spent 4 years at JPMorgan in London as an FX options market maker (G10 & EM). He holds a Master's degree in Financial Markets from University of Paris Dauphine. Dolev Joined Pi in mid-2018.</span>
                             </StyledOutTeamText>
                         </StyledTextContainer>
                         }
-                    <StyledTeamMemberContainer className="col-6 col-6-medium">
-                    <StyledOutTeamImage isMobile={isMobile} className="image featured" src={BenLogo}></StyledOutTeamImage>
+                    <StyledTeamMemberContainer className="col-6 col-6-medium teamImageContiner">
+                    <StyledOutTeamImage isMobile={isMobile} className="image featured mid" src={BenLogo}></StyledOutTeamImage>
                     {isDevice &&  
                         <StyledOutTeamText isDevice={isDevice}>
-                            <span tabIndex="0">BEN MOSCONA</span>
+                            <StyledTeamName tabIndex="0">BEN MOSCONA</StyledTeamName>
                             <span tabIndex="0">HEAD OF RESEARCH</span>   
                         </StyledOutTeamText>                    
                     }
@@ -68,12 +68,12 @@ const Team = () =>{
             </section>
 
             <section>
-                <div className="row">
-                    <StyledTeamMemberContainer className="col-6 col-6-medium">
-                    <StyledOutTeamImage isMobile={isMobile} className="image featured" src={TalieLogo}></StyledOutTeamImage>
+                <div className="row teamImageContiner">
+                    <StyledTeamMemberContainer className="col-6 col-6-medium teamImageContiner">
+                    <StyledOutTeamImage isMobile={isMobile} className="image featured mid" src={TalieLogo}></StyledOutTeamImage>
                     {isDevice &&  
                         <StyledOutTeamText isDevice={isDevice}>
-                            <span tabIndex="0">TALIE ARKIN</span>
+                            <StyledTeamName tabIndex="0">TALIE ARKIN</StyledTeamName>
                             <span tabIndex="0">INVESTOR RELATIONS</span>   
                         </StyledOutTeamText>                    
                     }
@@ -82,7 +82,7 @@ const Team = () =>{
                         <StyledOutTeamText isDevice={isDevice}>
                         {!isDevice && 
                             <React.Fragment>
-                                <span tabIndex="0">TALIE ARKIN</span>
+                                <StyledTeamName tabIndex="0">TALIE ARKIN</StyledTeamName>
                                 <span tabIndex="0">INVESTOR RELATIONS</span>
                             </React.Fragment>
                         }
