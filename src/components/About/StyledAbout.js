@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledAbout = styled.div`
-    
-`
-
-
 export const StyledAboutImgSection = styled.div`
-    display: flex;
-    align-items: center;
 `
 
 export const StyledAboutTextSection = styled.div`
@@ -46,4 +39,9 @@ export const StyledScrolArrow = styled.img`
     height: 60px;
     width: 60px !important;
     z-index: 1;
+`
+
+export const StyledPhilosophyImg = styled.img`
+    position: relative;
+        top: -50px;
 `
