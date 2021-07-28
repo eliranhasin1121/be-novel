@@ -39,6 +39,7 @@ export const StyledScrolArrow = styled.img`
     height: 60px;
     width: 60px !important;
     z-index: 1;
+    margin-bottom: 0px;
 `
 
 export const StyledPhilosophyImg = styled.img`

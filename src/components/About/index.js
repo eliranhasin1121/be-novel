@@ -20,7 +20,7 @@ const About = () => {
                     </StyledAboutImgSection>
                     
                     <StyledAboutTextSection className="col-6 col-12-medium">
-                        <StyledAboutText tabIndex="0">
+                        <StyledAboutText tabIndex="0" style={{ textAlign: 'left'}}>
                             PI EM is an absolute return macro volatility hedge fund focused primarily on emerging market currencies and sovereign debt.
                         </StyledAboutText>
                     </StyledAboutTextSection>
@@ -51,8 +51,8 @@ const About = () => {
                     </StyledAboutTextSection>
                 </div>
                 :
-                <div className="row" style={{display : 'block'}}>
-                    <StyledAboutImgSection className="col1-12">
+                <div className="row" style={{display : 'block' }}>
+                    <StyledAboutImgSection className="col1-12" style={{paddingTop : '0px' }}>
                         <img className="image featured" src={PhilosophyContianer} tabIndex={0} 
                         aria-label={'OUR PHILOSOPHY We view risk-management as a fundamental tool in structuring each trade as well as our entire portfolio rather than merely an overlay to the portfolio. A conservative approach to risk assessment and management is at the core of the fund’s activities. The perpetual development of screening and pricing models allows the investment team to continually take advantage of market inefficiencies.'}/>
                     </StyledAboutImgSection>
