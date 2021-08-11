@@ -44,10 +44,10 @@ export default function Footer({history}){
       ) : 
       (
     <>
-    <LinkItemWrapper  className="col-2">
+    {/* <LinkItemWrapper  className="col-2">
     <Logo className="image featured" src={footerLogo}/>
-    </LinkItemWrapper>
-    <LinkItemWrapper  className="col-10">
+    </LinkItemWrapper> */}
+    <LinkItemWrapper style={{width : '100%' , marginBottom : '10px'}} className="col-10">
         <Text as={'span'}>©PI FUNDS | POWERED BY NERAFOX</Text>
     </LinkItemWrapper>
     </>
@@ -72,11 +72,11 @@ const InternalRow = styled.div`
 display:flex;
 `
 const LinkItemWrapper = styled.div`
-display:flex;
-align-items:center;
-justify-content:center;
-padding:15px 0 0 25px;
-height:20px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	padding:15px 0 0 25px;
+	height:20px;
 `
 
 const Text = styled.span`

@@ -20,7 +20,7 @@ const About = () => {
                     </StyledAboutImgSection>
                     
                     <StyledAboutTextSection className="col-6 col-12-medium">
-                        <StyledAboutText tabIndex="0" style={{ textAlign: 'left'}}>
+                        <StyledAboutText tabIndex="0" style={{ textAlign: 'left' , marginLeft : '10px'}}>
                             PI EM is an absolute return macro volatility hedge fund focused primarily on emerging market currencies and sovereign debt.
                         </StyledAboutText>
                     </StyledAboutTextSection>

@@ -25,7 +25,6 @@ export const StyledScrolArrowContiner = styled.div`
     flex-direction: column;
     align-items: center;
     span{
-        color: #6b7770;
         text-decoration: none;
     }
 

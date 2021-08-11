@@ -7,6 +7,8 @@ export const StyledBurderMenuContianer = Styled.div`
     z-index: 9999;
     width: 100%;
     position: fixed;
+    right: 0;
+    opacity: 0.7;
 
 `
 
